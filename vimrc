@@ -58,3 +58,18 @@ nnoremap ; :
 
 " Autosave a file when you leave insert mode
 autocmd InsertLeave * if expand('%') != '' | update | endif
+
+" netrw to use a tree view type
+let g:netrw_liststyle = 3
+
+" toggle netrw banner ... off please ;)
+let g:netrw_banner = 0
+
+" opening windows ... on the current window that isn't the file browser :P
+let g:netrw_browse_split = 4
+
+" directory explorer being less fat ;P
+let g:netrw_winsize = 25
+
+" open files on the right ... like most other IDEs
+let g:netrw_altv = 1
