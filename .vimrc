@@ -21,7 +21,7 @@ endif
 :set incsearch
 
 " highlight things that we find in search
-:set nohlsearch
+:set hlsearch
 
 " turn on syntax highlighting
 :syntax on
@@ -50,8 +50,11 @@ colorscheme badwolf
 " Don't wrap lines...just please don't do it dammit
 :set nowrap
 
-" Swap/Remap the Colon and the Semi-Colon...now I don't have to hold to hold shift everytime
-nnoremap ; :
+" Switching between split windows is easier now
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Set compatibility mode off
 :set nocompatible
